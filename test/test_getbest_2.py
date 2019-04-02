@@ -20,7 +20,14 @@ class TestExclude(unittest.TestCase):
 	mark_col = 3;
 	test_data1,test_data2 = getbest.findTop()
 	top, best = getbest.findTop(os.path.join(this_dir,"bestdat0.csv"),num_col,mark_col)
-        self.assertEqual(test_data1,90)
+        self.assertEqual(test_data2,90)
+
+    def test_Top(self):
+	num_col = 2;
+	mark_col = 3;
+	test_data1,test_data2 = getbest.findTop()
+	top, best = getbest.findTop(os.path.join(this_dir,"bestdat0.csv"),num_col,mark_col)
+        self.assertEqual(test_data1,1)
 
 if __name__ == '__main__':
 
