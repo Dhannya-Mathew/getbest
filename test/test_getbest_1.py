@@ -16,8 +16,8 @@ class TestExclude(unittest.TestCase):
         self.assertIs(mark_col,3)
 
     def test_Top(self):
-	num_col = 2;
-	mark_col = 3;
+	num_col = 2
+	mark_col = 3
 	marks = "72,71,90"
 	top_ind, top_Mark = getbest.findTop(marks,num_col,mark_col)
         self.assertEqual(top_Mark,90)
